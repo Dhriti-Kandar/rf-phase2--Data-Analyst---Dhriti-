@@ -1,1 +1,197 @@
+THEORETICAL TASKS
+
+1. 	Explain the end-to-end data analysis lifecycle using a real business example.
+
+→  The Data Analytics Lifecycle is a step-by-step methodology that guides analysts, data scientists, and business professionals in collecting, processing, analysing, and interpreting data to solve problems and make informed decisions.
+It ensures consistency, quality, and accuracy across all analytics projects.
+Key Objectives of the Lifecycle:
+Provide a structured approach to data analysis.
+Minimise errors and data inconsistencies.
+Enable better collaboration among teams.
+Convert data into business value.
+In simple terms, the data analytics lifecycle is the journey from data collection to data-driven decision-making.
+Without a proper framework, data analysis can become chaotic with unclear goals, poor-quality data, and unreliable insights.
+Efficiency: Keeps processes organized and repeatable.
+Accuracy: Ensures clean, valid, and reliable data.
+Clarity: Aligns teams on objectives and deliverables.
+Scalability: Handles analytics at scale.
+Value: Converts insights into measurable business outcomes.
+ The 6 Key Phases of the Data Analytics Lifecycle
+Although the number of stages may vary across organisations, most follow these six essential phases:
+Data Discovery and Collection
+Data Preparation and Cleaning
+Data Analysis and Exploration
+Data Modelling and Testing
+Data Visualisation and Interpretation
+Decision-Making and Implementation
+Let’s explore each in detail.
+Phase 1: Data Discovery and Collection
+Everything starts with understanding what problem needs solving and what data is required.
+Objectives:
+Define business questions and KPIs.
+Identify data sources.
+Collect required datasets.
+Example:
+A telecom company wants to reduce customer churn.
+Problem: “Why are customers leaving?”
+Data needed: Complaints, billing, call history, demographics.
+Tools Used: Google Analytics, SQL, Talend, Apache Kafka
+Output: Clear problem statement and initial dataset.
+Phase 2: Data Preparation and Cleaning
+Raw data is often messy full of missing values and duplicates. Cleaning ensures accuracy.
+Objectives:
+Ensure data consistency and completeness.
+Structure data for analysis.
+Key Activities:
+Remove duplicates.
+Fix missing values.
+Standardize formats and merge sources.
+Tools Used: Python (Pandas), Excel Power Query, Alteryx
+Output: A clean, reliable dataset.
+Phase 3: Data Analysis and Exploration
+This phase uncovers trends, correlations, and patterns in data.
+Objectives:
+Understand what the data reveals.
+Identify key relationships and insights.
+Example:
+A retailer finds that customers who use discount coupons are 40% more likely to make repeat purchases.
+Tools Used: Python (NumPy, Seaborn), R, Tableau, Power BI
+Output: Actionable insights that describe business behavior.
+Phase 4: Data Modeling and Testing
+Now comes prediction and validation.
+Objectives:
+Build and test statistical or ML models.
+Validate accuracy and performance.
+Example:
+A bank builds a logistic regression model to predict loan defaults.
+Tools Used: Scikit-learn, TensorFlow, R, Jupyter Notebook
+Output: Optimised model ready for deployment.
+Phase 5: Data Visualisation and Interpretation
+Turning insights into clear, visual stories for decision-makers.
+Objectives:
+Present data visually for better understanding.
+Simplify insights through dashboards and reports.
+Example:
+A marketing team views campaign ROI in a Power BI dashboard.
+Tools Used: Power BI, Tableau, Google Data Studio, Excel
+Output: Interactive reports for strategic decisions.
+Phase 6: Decision-Making and Implementation
+The final stage converts insights into real-world impact.
+Objectives:
+Implement data-driven actions.
+Measure and refine strategies.
+Example:
+A streaming service improves watch time by 25% after implementing personalized recommendations based on data insights.
+Tools Used: BI dashboards, AWS, Azure, Jira
+Output: Improved business performance and measurable ROI.
+4. Supporting Elements of the Data Analytics Lifecycle
+Beyond these six phases, successful analytics requires key enablers:
+Data Governance: Ensures accuracy, privacy, and compliance.
+Collaboration: Promotes teamwork among analysts, engineers, and managers.
+Automation: Speeds up repetitive workflows through pipelines.
+Documentation: Maintains project transparency and reproducibility.
+5. Real-World Example: Lifecycle in Action
+Scenario: A food delivery app wants to improve customer satisfaction.
+Data Collection: Gathers delivery times, ratings, and complaints.
+Data Cleaning: Removes duplicates and fixes time inconsistencies.
+Data Analysis: Finds delays during weekends as the main issue.
+Modeling: Predicts high-delay regions using ML.
+Visualization: Power BI highlights red zones on the map.
+Implementation: Adds drivers in peak zones satisfaction improves by 30%.
+6. Common Challenges in the Lifecycle
+
+
+Challenge
+Impact
+Solution
+Poor Data Quality
+Unreliable insights
+Automate cleaning and validation
+Unclear Objectives
+Wasted time
+Define KPIs early
+Lack of Collaboration
+Misaligned results
+Improve communication
+Too Many Tools
+Inefficiency
+Choose integrated platforms
+Security Issues
+Compliance risks
+Strengthen data governance
+
+
+
+
+
+
+
+2. Differentiate: Descriptive vs Diagnostic analytics; Correlation vs Causation
+
+→  Descriptive analytics summarises historical data to explain "what happened," using tools like reports and dashboards to identify trends. 
+
+Conversely, Diagnostic analytics investigates data to determine "why it happened," using techniques like drill-down, data mining, and correlations to identify root causes behind trends or anomalies. 
+
+Key Differences: 
+Goal: Descriptive records and summarizes past events. Diagnostic uncovers the reasons, relationships, and dependencies behind those events.
+Question Answered: Descriptive answers "What happened?" Diagnostic answers "Why did it happen?".
+Techniques: Descriptive uses data aggregation and visualization (KPIs, reports). Diagnostic uses techniques like drill-down, data mining, and hypothesis testing.
+Context: Descriptive provides the what, while diagnostic provides the why. 
+Examples:
+
+Descriptive: A monthly report showing a 10%drop in website traffic.
+
+Diagnostic: Analysing the data reveals the traffic drop was due to a broken link in a marketing email. 
+
+
+Correlation v/s Causation
+
+Correlation indicates a statistical association where two variables move together, while causation (or causality) means one variable directly produces a change in the other. Correlation does not imply causation; just because two variables are related does not mean one causes the other, as third factors often influence both. 
+
+
+Key Differences and Details:
+Correlation (Association): Measures the strength and direction of a relationship between two variables. For example, ice cream sales and sunburns both increase in summer, showing a positive correlation.
+Causation (Cause-and-Effect): Indicates that a change in one variable is directly responsible for a change in the other. For example, UV radiation causes skin damage (sunburn).
+The "Third Variable" Problem: A correlation can exist because a hidden, or lurking, variable influences both, such as warm weather driving both ice cream sales and sunburns, not ice cream causing sunburns.
+Proving Causation: To establish causation, researchers typically use controlled, randomized experiments rather than just observing data, which only reveals correlations. 
+Examples:
+Correlation: Increased ice cream sales and increased crime rates are correlated, but only because both increase during hot weather.
+Causation: Smoking (Variable A) is proven to cause lung cancer (Variable B).
+
+
+
+
+
+
+
+
+3. 	Short notes: Data bias; Missing data strategies; KPIs vs Metrics
+
+→ Data Bias
+Data bias refers to systematic errors in data collection, processing, or analysis that lead to inaccurate or misleading results. It occurs when certain groups, values, or outcomes are over-represented or under-represented in the dataset. Data bias can affect the fairness and reliability of analysis and may result in wrong business decisions.
+ Example: Survey data collected only from urban users may not represent rural users.
+Missing Data Strategies
+Missing data strategies are techniques used to handle incomplete data in a dataset to maintain analysis accuracy. Common strategies include deleting records with missing values, replacing missing values using mean, median, or mode, and using advanced methods such as interpolation or predictive modeling. The choice of strategy depends on the amount and importance of missing data.
+ Example: Replacing missing age values with the average age of users.
+KPIs vs Metrics
+KPIs (Key Performance Indicators) and metrics are both used to measure performance, but they differ in importance. Metrics track general activities or processes, while KPIs measure progress toward specific strategic goals. KPIs are critical for decision-making, whereas metrics provide supporting information.
+ Example:
+Metric: Number of website visitors
+
+
+KPI: Conversion rate of visitors into customers
+
+
+     4. 	Case: ‘Why do dashboards fail even with correct data?’
+→  Dashboards may fail even when the data used is accurate because effectiveness depends not only on data quality but also on design, relevance, and usability.
+One major reason is a poor understanding of business requirements. If a dashboard fails to answer the actual business questions, decision-makers may find it useless, despite having correct data.
+Another reason is information overload. Dashboards that display too many charts, metrics, or KPIs can confuse users and make it difficult to identify key insights.
+Lack of actionable insights is also a common issue. Dashboards often display numbers without context, trends, or recommendations, leaving users uncertain about what action to take.
+Poor visualisation design can cause failure as well. Incorrect chart types, inconsistent scales, excessive colours, or cluttered layouts reduce clarity and impact.
+Dashboards may also fail due to a lack of user training and adoption. If users do not know how to interpret the dashboard or do not trust it, they may ignore it.
+Lastly, static or outdated dashboards reduce usefulness. If dashboards are not regularly updated or interactive, they fail to support timely decision-making.
+
+
+
+
 
